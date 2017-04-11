@@ -1,0 +1,107 @@
+body {
+  //若使用 header_02 將背景變成黑色 影片較不會破圖
+  background-color: $black;
+}
+
+.nav_02_line {
+  @include screen(pcSmall) {
+    .number {
+      // 數字顏色
+      color: $white;
+    }
+    .listWrap {
+      ul.list {
+        // 調整各個 tooltip 寬度
+        li {
+          a.tooltip {
+            &:before {
+              // Tooltip line
+              background-color: $white;
+            }
+            &:after {
+              // Tooltip circle
+              background-color: $white;
+            }
+          }
+          &:nth-child(1) {
+            a.tooltip {
+              .tooltiptext {
+                width: 100px;
+              }
+            }
+          }
+          &:nth-child(2) {
+            a.tooltip {
+              .tooltiptext {
+                width: 160px;
+              }
+            }
+          }
+          &:nth-child(3) {
+            a.tooltip {
+              .tooltiptext {
+                width: 150px;
+              }
+            }
+          }
+          &:nth-child(4) {
+            a.tooltip {
+              .tooltiptext {
+                width: 110px;
+              }
+            }
+          }
+        }
+      }
+      .line {
+        // 調整線顏色
+        background-color: rgba(255, 155, 127, 1);
+      }
+    }
+    &.open {
+      .listWrap {
+        ul.list {
+          li {
+            a.tooltip {
+              /* Tooltip line */
+              &:before {
+                background-color: $white;
+              }
+              /* Tooltip circle */
+              &:after {
+                background-color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+a.nav_02_btn {
+  .line {
+    // 選單三條線顏色
+    border-bottom: 3px solid rgba(255, 155, 127, 1);
+  }
+}
+
+.list_09 {
+  .layoutWrap {
+    .article {
+      .navWrap {
+        .nav {
+          background-color: rgba(255, 155, 127, 1);
+        }
+      }
+    }
+  }
+}
+
+ul.fixedBtn_01,
+.fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share {
+  li .material_btn {
+    //按鈕色
+    background-color: rgba(114, 127, 99, 1);
+  }
+}
