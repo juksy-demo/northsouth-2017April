@@ -1,8 +1,5 @@
 (function($) {
 
-  window.JUKSY = {
-    apiUri: 'https://www.juksy.com/api'
-  };
 
   // init
   //@prepros-append common/init.js
