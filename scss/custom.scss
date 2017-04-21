@@ -55,7 +55,7 @@ body {
       }
       .line {
         // 調整線顏色
-        background-color: rgba(255, 155, 127, 1);
+        background-color: rgba(254, 219, 107, 1);
       }
     }
     &.open {
@@ -82,7 +82,7 @@ body {
 a.nav_02_btn {
   .line {
     // 選單三條線顏色
-    border-bottom: 3px solid rgba(255, 155, 127, 1);
+    border-bottom: 3px solid rgba(254, 219, 107, 1);
   }
 }
 
@@ -91,7 +91,7 @@ a.nav_02_btn {
     .article {
       .navWrap {
         .nav {
-          background-color: rgba(255, 155, 127, 1);
+          background-color: rgba(254, 219, 107, 1);
         }
       }
     }
@@ -102,6 +102,6 @@ ul.fixedBtn_01,
 .fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share {
   li .material_btn {
     //按鈕色
-    background-color: rgba(114, 127, 99, 1);
+    background-color: rgba(255, 128, 59, 1);
   }
 }
